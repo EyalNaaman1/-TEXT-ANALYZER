@@ -1,25 +1,12 @@
 # Text Analyzer / Eyal Naaman
 
-## Extensions:
-
-### * Task 8: Checking Fixed-Length Paths Between People  
-- BFS-based search for exact `K` path length.  
-- Uses adjacency list for fast lookups.  
-- Supports preprocessed graph data for efficiency.  
-
-### * Task 9: Grouping Sentences by Shared Words  
-- Builds a sentence similarity graph based on shared words.  
-- Optimized with a word-to-sentence dictionary.  
-- Finds groups using BFS for connected components.  
-
-## Design Decisions:
-
-### * Task 8: Why BFS?  
-- Direct `K`-step control, avoiding unnecessary paths.  
-- More efficient for this case.  
-- Ensures minimal memory usage compared to recursive approaches. 
-
-### * Testing and Debugging Approach  
-- Used pytest for automated testing and error handling validation.  
-- Edge cases were tested, such as empty inputs, invalid input.     
-
+This project deals with analyzing long documents to identify characters and their relationships. The system allows complex queries based on graph algorithms.
+System features
+• Preprocessing: Text cleaning, and maintaining dominant words.
+• Character identification: Mapping full names and nicknames from databases (People CSV).
+• Search engine: Retrieving sentences containing specific word sequences (K-seqs).
+• Relationship analysis (Graph Theory):
+• Building a relationship graph between characters based on proximity (Window size).
+• BFS algorithm: Testing for ties and shortest distance between characters in a graph.
+• Fixed-length paths: Detecting indirect relationships at an exact k distance.
+• Community identification: Grouping similar sentences according to a common threshold of words (Threshold).
