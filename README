@@ -1,12 +1,18 @@
 # Text Analyzer / Eyal Naaman
+    This project deals with analyzing long documents to identify characters and their relationships. The system allows complex queries based on graph algorithms.
+    System features
+    • Preprocessing: Text cleaning, and maintaining dominant words.
+    • Character identification: Mapping full names and nicknames from databases (People CSV).
+    • Search engine: Retrieving sentences containing specific word sequences (K-seqs).
+    • Relationship analysis (Graph Theory):
+    • Building a relationship graph between characters based on proximity (Window size).
+    • BFS algorithm: Analyzing connectivity and finding the shortest path between entities.
+    • Fixed-length paths: Detecting indirect relationships at an exact k distance.
+    • Community identification: Grouping similar sentences according to a common threshold of words (Threshold).
 
-This project deals with analyzing long documents to identify characters and their relationships. The system allows complex queries based on graph algorithms.
-System features
-• Preprocessing: Text cleaning, and maintaining dominant words.
-• Character identification: Mapping full names and nicknames from databases (People CSV).
-• Search engine: Retrieving sentences containing specific word sequences (K-seqs).
-• Relationship analysis (Graph Theory):
-• Building a relationship graph between characters based on proximity (Window size).
-• BFS algorithm: Testing for ties and shortest distance between characters in a graph.
-• Fixed-length paths: Detecting indirect relationships at an exact k distance.
-• Community identification: Grouping similar sentences according to a common threshold of words (Threshold).
+Technical Highlights
+    Search Optimization: Achieving O(1) lookup time for K-seqs using specialized Hash Maps.
+    Scalability: Designed to handle large textual archives efficiently.
+
+NOTE:
+    Attached is an explanatory video about project decisions.
